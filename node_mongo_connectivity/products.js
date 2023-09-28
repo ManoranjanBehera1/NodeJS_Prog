@@ -7,9 +7,9 @@ app.get("/products", async (req, res) => {
   let connection;
   try {
     console.log("Starting connection");
-    connection = await MongoClient.connect("mongodb://localhost:27017");
+    connection = await MongoClient.connect("mongodb://0.0.0.0:27017");
     console.log("Connection Established", connection);
-    const products = connection.db("april2023").collection("products").find({});
+    const products = connection.db("july2023").collection("products").find({});
     const result = await products.toArray();
     res.json(result);
   } catch (err) {

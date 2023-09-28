@@ -1,5 +1,6 @@
 {
   "name": "node_mongo_connectivity",
+  "type":"module",
   "version": "1.0.0",
   "description": "",
   "main": "employeeModel.js",
